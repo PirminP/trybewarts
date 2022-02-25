@@ -9,3 +9,20 @@
   display: flex;
   flex-direction: row;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
