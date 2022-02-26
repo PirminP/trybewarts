@@ -15,6 +15,7 @@ main {
 }
 
 #evaluation-form {
+  border: steelblue solid 1px;
   display: flex;
   width: 675px;
   flex-direction: column;
@@ -25,4 +26,15 @@ main {
   height: 500px;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.fullname {
+  border: rgb(21, 128, 0) solid 1px;
+  display: flex;
+}
+
+.emailHome {
+  border: tomato solid 1px;
+  display: flex;
+  flex-direction: row;
 }
