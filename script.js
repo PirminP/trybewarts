@@ -10,5 +10,5 @@ function clickLogin(enterButton) {
   return enterButton;
 }
 
-const button = document.getElementById('forms-login');
+const button = document.getElementById('form-login');
 button.addEventListener('click', clickLogin());

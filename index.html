@@ -11,23 +11,27 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logotyp of Trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form id="forms-login"class="trybewarts-login">
-      <input type ="text"id="email"name="email" placeholder="Email">
-      <input type="text"id="password"name="password" placeholder="Senha">
-      <button id="enterButton" onclick="clickLogin();">Entrar</button>
-    </form>
+    <div id="form">
+      <form id="form-login" class="trybewarts-login form-group">
+        <input class="form-control" type ="text"id="email"name="email" placeholder="Email">
+        <input class="form-control" type="text"id="password"name="password" placeholder="Senha">
+        <button class="btn"id="enterButton" onclick="clickLogin();">Entrar</button>
+      </form>
+    </div>
   </header>
   <main>
     <form id="evaluation-form" action="" method="get">
+      <h2>Formulário de avaliação</h2>
       <div class="fullname">
-        <input type="text" name="input-name" id="input-name" placeholder="Nome">
-        <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
+        <input class="form-control" type="text" name="input-name" id="input-name" placeholder="Nome">
+        <input class="form-control"type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
       </div>
       <div class="emailHome">
-        <input type="text" name="input-email" id="input-email" placeholder="Email">
+        <input class="form-control"type="text" name="input-email" id="input-email" placeholder="Email">
         <div class="house-section">
           <label for="house">Casa:</label>
-          <select name="house" id="house">
+          <select class="custom-select" name="house" id="house">
+            <option value=""disabled selected hidden >Escolha...</option>
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
