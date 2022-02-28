@@ -127,9 +127,30 @@ hr {
   align-content: space-around;
 }
 
-#label-label-rate {
+#ratings {
+  border: darkgoldenrod solid 1px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+#ratings label {
+  border: darkgreen solid 1px;
+  margin: 5px 10px;
+}
+
+#label-rate label {
+  margin: 5px 10px;
+}
+
+#label-rate {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 textarea {
