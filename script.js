@@ -11,6 +11,8 @@ function clickLogin(enterButton) {
     alert('Email ou senha inválidos.');
   }
 }
+// Função para gerar radio buttons (optei por essa forma para não precisar colocar 1 linha a mais no html para cada botão), *precisa de ajustes*
+
 // console.log(document.getElementById('label-rate').innerText)
 // function generateRateButton() {
 //   for (let index = 1; index <= 10; index += 1) {
