@@ -32,7 +32,7 @@
           <div class="house-section">
             <label for="house">Casa:</label>
             <select name="house" id="house">
-              <option value="disabled selected hidden">Escolha...</option>
+              <option value="">Escolha...</option>
               <option id="gitnoria-house" value="Gitnória">Gitnória</option>
               <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
               <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -57,22 +57,22 @@
           <div id="pick-content">
             <label for="content" class="checkbox" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <label for="hofs">
-              <input id="hofs" type="checkbox" name="content" value="HoFs">HoFs
+              <input id="hofs" class="subject" type="checkbox" name="content" value="HoFs">HoFs
             </label>
             <label for="jest">
-              <input id="jest" type="checkbox" name="content" value="Jest">Jest
+              <input id="jest" class="subject" type="checkbox" name="content" value="Jest">Jest
             </label>
             <label for="promises">
-              <input id="promises" type="checkbox" name="content" value="Promises">Promises
+              <input id="promises" class="subject" type="checkbox" name="content" value="Promises">Promises
             </label>
             <label for="react">
-              <input id="react" type="checkbox" name="content" value="React">React
+              <input id="react" class="subject" type="checkbox" name="content" value="React">React
             </label>
             <label for="sql">
-              <input id="sql" type="checkbox" name="content" value="SQL">SQL
+              <input id="sql" class="subject" type="checkbox" name="content" value="SQL">SQL
             </label>
             <label for="python">
-              <input id="python" type="checkbox" name="content" value="Python">Python
+              <input id="python" class="subject" type="checkbox" name="content" value="Python">Python
             </label>
           </div>
         </div>
@@ -110,12 +110,16 @@
             <input type="radio" name="rate" id="rate10" value="10">10
           </label>
         </div>
-        <label class="textarea">Deixe seu comentário:
-          <textarea name="comment-section" maxlength="500" ></textarea>
-        </label>
-        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
-          <input type="checkbox" id="agreement">
-        </label>
+        <div id="text-area">
+          <label class="textarea" for="textarea">Deixe seu comentário:</label>
+          <textarea name="comment-section" id="textarea" maxlength="500"></textarea>
+          <p id="counter">500</p>
+        </div>
+        <div id="agree-area">
+          <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
+            <input type="checkbox" id="agreement">
+          </label>
+        </div>
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
     </div>
