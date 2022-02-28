@@ -1,4 +1,6 @@
 const button = document.querySelector('#enter-button');
+const submitButton = document.querySelector('#submit-btn');
+const agreementCheckbox = document.querySelector('#agreement');
 
 function clickLogin(enterButton) {
   enterButton.preventDefault();
@@ -12,4 +14,10 @@ function clickLogin(enterButton) {
   }
 }
 
+// Research !x: Reverse boolean value: https://stackoverflow.com/questions/40306852/what-does-means-in-javascript
+function enableSubmit() {
+  submitButton.disabled = !agreementCheckbox.checked;
+}
+
 button.addEventListener('click', clickLogin);
+agreementCheckbox.addEventListener('change', enableSubmit);
